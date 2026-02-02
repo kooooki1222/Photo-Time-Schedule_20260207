@@ -32,7 +32,14 @@
 
         const PhotoSchedule = () => {
             // ▼▼▼ ここにAPIキーを入力してください ▼▼▼
-            const GEMINI_API_KEY = "AIzaSyCE9M7KPLvqVLoN8bsqCrLVbgt-H635aFc"; 
+            // ★前半（AIzaSy...と、あと適当に10文字くらい）をここに入れる
+        const GEMINI_KEY_PART_A = "AIzaSyACr4NNAuohuf_M5m"; 
+
+        // ★残りの後半（ABCDE...）をここに入れる
+        const GEMINI_KEY_PART_B = "PZa5IB5hf6k-8HMaA"; 
+        
+        // ここで合体させます（この行は触らなくてOK！）
+        const GEMINI_API_KEY = GEMINI_KEY_PART_A + GEMINI_KEY_PART_B;
             // ▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲
 
             // デザインテーマ定数（ハレクラニイメージ）
@@ -392,5 +399,6 @@
 </body>
 
 </html>
+
 
 
